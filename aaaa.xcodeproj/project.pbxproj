@@ -15,6 +15,9 @@
 		9A3626761D10701C00CCBC7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A3626751D10701C00CCBC7A /* Assets.xcassets */; };
 		9A3626791D10701C00CCBC7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A3626771D10701C00CCBC7A /* LaunchScreen.storyboard */; };
 		9A3626811D10707300CCBC7A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A3626801D10707300CCBC7A /* GoogleService-Info.plist */; };
+		9A5F0AB61D206A4100E3BE61 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5F0AB51D206A4100E3BE61 /* PostModel.swift */; };
+		9A5F0AB81D208DD700E3BE61 /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5F0AB71D208DD700E3BE61 /* ProfileModel.swift */; };
+		9A5F0ABB1D2094B800E3BE61 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5F0ABA1D2094B800E3BE61 /* ProfileController.swift */; };
 		9A860A901D10CBD800F48DDE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A860A8F1D10CBD800F48DDE /* HomeViewController.swift */; };
 		9AAB66E71D10732C004736B2 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AAB66E61D10732C004736B2 /* FBSDKCoreKit.framework */; };
 		9AAB66E91D107331004736B2 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AAB66E81D107331004736B2 /* FBSDKLoginKit.framework */; };
@@ -32,6 +35,9 @@
 		9A3626781D10701C00CCBC7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A36267A1D10701C00CCBC7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A3626801D10707300CCBC7A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9A5F0AB51D206A4100E3BE61 /* PostModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		9A5F0AB71D208DD700E3BE61 /* ProfileModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
+		9A5F0ABA1D2094B800E3BE61 /* ProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		9A860A8F1D10CBD800F48DDE /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		9AAB66E61D10732C004736B2 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../Documents/FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		9AAB66E81D107331004736B2 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../Documents/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
@@ -66,8 +72,6 @@
 			isa = PBXGroup;
 			children = (
 				9A36266A1D10701C00CCBC7A /* aaaa */,
-				9A3626691D10701C00CCBC7A /* Products */,
-				BEE92A21FA02EDB7315B237E /* Pods */,
 				8560580F7E5A41722C1864C6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -78,6 +82,7 @@
 				9A3626681D10701C00CCBC7A /* aaaa.app */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		9A36266A1D10701C00CCBC7A /* aaaa */ = {
@@ -92,8 +97,31 @@
 				9A36267A1D10701C00CCBC7A /* Info.plist */,
 				9A3626721D10701C00CCBC7A /* aaaa.xcdatamodeld */,
 				9A3626801D10707300CCBC7A /* GoogleService-Info.plist */,
+				BEE92A21FA02EDB7315B237E /* Pods */,
+				9A5F0AB41D2069DC00E3BE61 /* Model */,
+				9A3626691D10701C00CCBC7A /* Products */,
+				9A5F0AB91D20949E00E3BE61 /* Controllers */,
 			);
 			path = aaaa;
+			sourceTree = "<group>";
+		};
+		9A5F0AB41D2069DC00E3BE61 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9A5F0AB51D206A4100E3BE61 /* PostModel.swift */,
+				9A5F0AB71D208DD700E3BE61 /* ProfileModel.swift */,
+			);
+			name = Model;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		9A5F0AB91D20949E00E3BE61 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9A5F0ABA1D2094B800E3BE61 /* ProfileController.swift */,
+			);
+			name = Controllers;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		BEE92A21FA02EDB7315B237E /* Pods */ = {
@@ -103,6 +131,7 @@
 				9EC7A87A254ADAF2F1C5986D /* Pods-aaaa.release.xcconfig */,
 			);
 			name = Pods;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,8 +258,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A5F0ABB1D2094B800E3BE61 /* ProfileController.swift in Sources */,
 				9A36266E1D10701C00CCBC7A /* ViewController.swift in Sources */,
+				9A5F0AB61D206A4100E3BE61 /* PostModel.swift in Sources */,
 				9A36266C1D10701C00CCBC7A /* AppDelegate.swift in Sources */,
+				9A5F0AB81D208DD700E3BE61 /* ProfileModel.swift in Sources */,
 				9A3626741D10701C00CCBC7A /* aaaa.xcdatamodeld in Sources */,
 				9A860A901D10CBD800F48DDE /* HomeViewController.swift in Sources */,
 			);
